@@ -1,0 +1,14 @@
+/* reset our CSS */
+body,
+html {
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+canvas {
+  display: block;
+  touch-action: none;
+}

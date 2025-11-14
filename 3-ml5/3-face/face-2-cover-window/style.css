@@ -1,0 +1,24 @@
+/* reset our CSS */
+body,
+html {
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* center the canvas */
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+canvas {
+  display: block;
+  touch-action: none;
+}
