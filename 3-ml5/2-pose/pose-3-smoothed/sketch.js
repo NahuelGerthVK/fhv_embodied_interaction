@@ -9,7 +9,11 @@ let smoothing = 0.6; // smaller = smoother
 
 /* - - Preload - - */
 function preload() {
-  bodyPose = ml5.bodyPose({ flipped: true });
+  bodyPose = ml5.bodyPose({
+    enableSmoothing: true,
+    flipped: true,
+    runtime: "mediapipe", // seems to be more stable than "tfjs"
+  });
 }
 
 /* - - Setup - - */

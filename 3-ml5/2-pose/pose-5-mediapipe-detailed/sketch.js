@@ -12,6 +12,7 @@ function preload() {
   bodyPose = ml5.bodyPose("BlazePose", {
     enableSmoothing: true,
     flipped: true,
+    runtime: "mediapipe", // seems to be more stable than "tfjs"
   });
 }
 
